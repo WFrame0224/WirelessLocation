@@ -48,7 +48,7 @@ class LocationData():
     
     def send_commd(self):
         '''
-            发送读取RSSI读取命令'ba01ba'，连发10次，间隔50ms, 之后再发一次‘get’
+            发送读取RSSI读取命令'ba0xba'，连发10次，间隔50ms, 之后再发一次‘get’
         '''
         self.Tx_commd = 'ba'
         self.RssiNum = 10
